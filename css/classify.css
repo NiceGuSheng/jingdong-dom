@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.fenL_container{
+    height: 100%;
+    width:100%;
+    position: fixed;
+    background: #fff;
+}
+.fenL_container .search{
+    width:100%;
+    height: 40px;
+    position: relative;
+    z-index: 999;
+    background: url(../imgs/header-bg.png) repeat-x;
+    background-size: 1px 40px;
+}
+.fenL_container .search a{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    padding: 10px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+.fenL_container .search .search_left{
+    left: 0;
+    background-position: -20px 0;
+}
+.fenL_container .search .search_right{
+    right: 0;
+    background-position: -60px 0;
+}
+.fenL_container .search form{
+    width: 100%;
+    padding: 0 40px;
+    position: absolute;
+    top: 5px;
+}
+.fenL_container .search form input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+}
+.fenL_container .main{
+    height: 100%;
+}
+.fenL_container .main .main_left{
+    width: 90px;
+    float: left;
+    height: 100%;
+    background-color: #f3f4f6;
+}
+.fenL_container .main .main_left ul li{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom:1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.fenL_container .main .main_left ul .now{
+    border-right: 0px;
+    background-color: #fff;
+}
+.fenL_container .main .main_left ul .now a{
+    color:#d8505c;
+}
+.fenL_container .main .main_right{
+    height: 100%;
+    overflow: hidden;
+    background-color:#fff;
+    padding: 0 10px;
+}
+.fenL_container .main .main_right a{
+    display: block;
+    width: 100%;
+    padding:10px 0;
+}
+.fenL_container .main .main_right a img{
+    display: block;
+    width: 100%;
+}
+.fenL_container .main .main_right .hot_FenL{
+    width: 100%;
+}
+.fenL_container .main .main_right .hot_FenL h3{
+    font-size: 12px;
+}
+.fenL_container .main .main_right .hot_FenL ul li{
+    width: 33.33%;
+    float: left;
+}
+.fenL_container .main .main_right .hot_FenL ul li a{
+    width: 100%;
+}
+.fenL_container .main .main_right .hot_FenL ul li a img{
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+}
+
+.fenL_container .main .main_right .hot_FenL ul li a p{
+    font-size: 13px;
+    text-align: center;
+    padding-top: 5px;
+    color: #666;
+}

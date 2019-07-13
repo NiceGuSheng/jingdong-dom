@@ -1,0 +1,54 @@
+/* reset css 重置样式 */
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;  /*主流移动端浏览器兼容*/
+    -webkit-tap-highlight-color:transparent;   /*清除高亮效果*/
+}
+body{
+    font-size: 14px;
+    color: #333;
+    font-family: 'Microsoft Yahei',sans-serif;
+    background-color:#f5f5f5;;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;   
+    color: #333;
+}
+input,textarea{
+    outline: 0;
+    border:0;
+    resize: 0;
+    -webkit-appearance: none;   /*清除移动端输入框特有的样式*/
+}
+/* common css 共用样式 */
+
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.cleafix::before,
+.cleafix::after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+
+/* 精灵图 */  /* 2倍图 解决图片失真的问题 */
+[class^="icon_"],[class*=" icon_"]{
+    background: url("../imgs/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}
